@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>Numismática Visual</h2>
+					<h3>Visualización de datos con Processing</h3>
+					<p>
+						<small>Presentado por <a href="">Sergio Andrés Castro Castro</a> y <a href="">Stephanie Torres Jiménez</a></small>
+					</p>
+					<p>
+						<small>Computación Visual<br>Profesor: Jean Pierre Charalambos</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Contenido</h2>
+					<p>
+						<center><ul">
+							<li>Marco Teórico</li>
+							<li>Problemática</i>
+							<li>Solución propuesta</li>
+							<li>Conclusiones</li>
+							<li>Trabajo a futuro</li>
+							<li>Referencias</li>
+						</ul></center>
+					</p>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Marco teórico</h2>
+						<h4>Numismática</h4>
+						<p class="text-justify">Es el estudio y colección de monedas y papel emitido por una nación con el diseño oficial del país. 
+						Es conocida desde los tiempo del Imperio Romano.</p>
+						<br>
+						
+					</section>
+					<section>
+						<h2>Marco teórico</h2>
+						<h4>Visualización de datos</h4>
+						<p class="text-justify">Proceso de búsqueda, interpretación y comparación de datos que permite un conocimiento en profundidad y detalle, 
+						con el objetivo que dar una explicación comprensible para el usuario. </p>
+						<br>
+					</section>
+					
+				</section>
+
+					<section>
+						<h2>Problemática</h2>
+						<p>El Banco de la República de Colombia tiene un sistema de información que contiene una gran cantidad de datos de monedas, 
+						billetes y otros recursos económicos como estampillas o sellos, sin embargo, dicha información sólo puede ser accedida por 
+						algunos funcionarios del banco. De aquí surge la pregunta: ¿Qué hacer con los datos de mil monedas que narran la historia colombiana?. </p>
+						<br>
+					</section>
+
+					<section>
+						<h2>Problemática</h2>
+						<h4>Visita guiada a la Casa de la Moneda</h4>
+						<p>El recorrido se realizó en orden histórico comenzando con el concepto de trueque y el valor que las comunidades le daban a objetos cotidianos, pasando así, por las piedras preciosas y por las monedas que fueron hechas en su totalidad en oro.</p>
+						<br>
+					</section>
+
+				<section>
+					<h2>Solución propuesta</h2>
+					<p>
+						 Gracias a la flexibilidad que ofrece P5.js, se siguió la metodología de las 6 fases de un proyecto de visualización de datos:
+					</p>
+					<p>
+						<img src="images/flow.png" width="28%px" height="28%">
+					</p>
+				</section>
+
+				<section>
+					<h2>Solución propuesta</h2>
+					<h4><a href="https://visualnumismatica.github.io/visualnumismatica/" target="_blank">Demo</a></h4>
+					<p>
+						<img src="images/demo.png" width="85%px" height="85%">
+					</p>
+				</section>
+					
+				<section>
+					<h2>Conclusiones</h2>
+					
+					<p>
+						<ul>
+							<li>El trabajo realizado es un buen inicio para conocer conceptos y tratamiento de la información en el estudio de la Numismática, así como de tecnologías como Processing para Javascript.</li><br>
+							<li>En un proyecto de Visualización de datos, es necesario conocer de antemano el contexto del conjunto de datos, con el fin de representar la información de una manera más apropiada.</li><br>
+							<li>P5.js, la versión de Processing para Javascript, es una herramienta poderosa, ya que permite la interacción con elementos DOM de HTML.</li>
+						</ul>	
+					</p>
+				</section>
+
+				<section>
+					<h2>Trabajo a futuro</h2>
+					
+					<p>
+						<ul>
+							<li>Adaptación de este modelo de Visualización a los datos de las monedas proveídos por el Banco de la República de Colombia.</li><br>
+							<li>Aprovechar las ventajas que tiene Processing para implementar un modelo en 3D que permita visualizar las monedas, permitiendo movimientos de rotación sobre los ejes x, y y z.</li><br>
+							<li>Implementar técnicas de minería de datos sobre el conjunto de monedas del Banco de la República de Colombia.</li>
+						</ul>	
+					</p>
+				</section>
+
+				<section>
+					<h2>Referencias</h2>
+					
+					<p>
+						<ul>
+							<li><a href= "http://www.banrepcultural.org/museos-y-colecciones/casa-de-moneda" target="_blank">Museo Casa de Moneda - Colección numismática del Banco de la República.</a></li>
+							<li><a href= "http://numismatics.org/" target="_blank">American Numismatic Society.</a> </i>
+							<li><a href="https://en.wikipedia.org/wiki/Numismatics" target="_blank">Numismatics. Recuperado de Wikipedia</a></li>
+							<li><a href="https://en.wikipedia.org/wiki/Data_visualization" target="_blank">Data Visualization. Recuperado de Wikipedia</a></li>
+							<li>Fry B. Data Visualization. Exploring and explaning data with the Processing Environment. O'Relly (2007)</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h2>Gracias</h2>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
